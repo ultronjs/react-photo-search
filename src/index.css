@@ -117,10 +117,16 @@
     border-color: var(--dark);
     color: var(--dark);
 }
-.btn_dark{
+.btn_dark_outline {
+    background-color: var(--white);
+    border-color: var(--dark);
+    color: var(--dark);
+}
+.btn_dark_outline:hover:enabled {
     background-color: var(--dark);
     border-color: var(--dark);
     color: var(--light);
+    filter: brightness(100%);
 }
 
 

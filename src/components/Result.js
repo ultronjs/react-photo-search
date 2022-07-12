@@ -59,14 +59,14 @@ function Result() {
         )}
         <div className="result_footer">
           <button
-            className="btn btn_dark"
+            className="btn btn_dark_outline"
             onClick={() => setCurrentPageNumber((prev) => prev - 1)}
-            disabled={currentPageNumber===1}
+            disabled={currentPageNumber === 1}
           >
             Prev
           </button>
           <button
-            className="btn btn_dark"
+            className="btn btn_dark_outline"
             onClick={() => setCurrentPageNumber((prev) => prev + 1)}
           >
             Next
