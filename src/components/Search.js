@@ -8,7 +8,6 @@ function Search() {
   const [debounceValue] = useDebounce(text,300)
 
   useEffect(() => {
-    console.log(debounceValue)
     if(debounceValue) setSearchTerm(debounceValue)
 
   },[debounceValue])

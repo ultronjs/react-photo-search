@@ -8,7 +8,7 @@ export const ResultContextProvider = ({children}) => {
     const [searchTerm, setSearchTerm] = useState("Mercedes");
     const [currentPageNumber, setCurrentPageNumber] = useState(1);
     const [toggle, setToggle] = useState({ status: false, photoId: 0 });
-    console.log(searchTerm);
+
 
     const getResults = async (pageNumber=1) => {
       setLoading(true);
@@ -17,13 +17,10 @@ export const ResultContextProvider = ({children}) => {
         method:'GET'
       }
       ).then(res => res.json()).then(data => {
-        console.log(data)
         setResults(data)
         setLoading(false)}).catch(error => console.log(error));
     };
 
-    
-    console.log(results);
     return (
       <ResultContext.Provider
         value={{

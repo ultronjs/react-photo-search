@@ -29,7 +29,6 @@ function Result() {
     getResults(currentPageNumber);
   }, [searchTerm,currentPageNumber]);
 
-  console.log(toggle)
   if (isLoading) return <Loading />;
     return (
       <div

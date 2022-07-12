@@ -2,7 +2,6 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { useResultContext } from "../contexts/ResultContextProvider";
 
 const Sidebar = ({imgDetails,close}) => {
-  console.log(imgDetails)
   return (
     <aside className="sidebar">
       <div className="sidebar_dismiss" onClick={() => close()}>
