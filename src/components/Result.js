@@ -12,8 +12,9 @@ function Result() {
     getResults,
     currentPageNumber,
     setCurrentPageNumber,
+    toggle,
+    setToggle,
   } = useResultContext();
-  const [toggle, setToggle] = useState({status:false,photoId:0 });
 
   const handleToggle = (photoId) => {
     if(photoId === toggle.photoId){
